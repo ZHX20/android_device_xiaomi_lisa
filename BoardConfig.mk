@@ -6,6 +6,11 @@
 
 DEVICE_PATH := device/xiaomi/lisa
 
+# Build Broken
+BUILD_BROKEN_DUP_RULES := true
+BUILD_BROKEN_INCORRECT_PARTITION_IMAGES := true
+BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
+
 # Inherit from sm8350-common
 include device/xiaomi/sm8350-common/BoardConfigCommon.mk
 
