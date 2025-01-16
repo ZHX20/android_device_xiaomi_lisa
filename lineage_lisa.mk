@@ -10,6 +10,16 @@ $(call inherit-product, device/xiaomi/lisa/device.mk)
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
+RISING_MAINTAINER=
+TARGET_ENABLE_BLUR := true
+TARGET_PREBUILT_LAWNCHAIR_LAUNCHER := true
+WITH_GMS := true
+TARGET_DEFAULT_PIXEL_LAUNCHER := true
+
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    RisingChipset=SD778G \
+    RisingMaintainer=
+
 PRODUCT_BRAND := Xiaomi
 PRODUCT_DEVICE := lisa
 PRODUCT_MANUFACTURER := Xiaomi
